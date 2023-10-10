@@ -12,5 +12,5 @@ function calcolaPrezzo() {
         prezzoFinale *= 0.6;
     }
 
-    document.getElementById("ticketPrice").textContent = `Prezzo del biglietto: ${prezzoFinale.toFixed(2)} €`;
+    document.getElementById("ticketPrice").textContent = `Prezzo: ${prezzoFinale.toFixed(2)} €`;
 }
