@@ -14,8 +14,8 @@
    <div class="container 100vh">
         <form>
             <div class="input-group mb-1">
-                <input  type="text" aria-label="First name" placeholder="Nome" class="form-control">
-                <input  type="text" aria-label="Last name" placeholder="Cognome" class="form-control">
+                <input id="nomeInput" type="text" aria-label="First name" placeholder="Nome" class="form-control">
+                <input id="cognomeInput" type="text" aria-label="Last name" placeholder="Cognome" class="form-control">
             </div>
             <div class="input-group mb-1">
                 <input id="kmInput"  type="number"  placeholder="Inserisci i km che vuoi percorrere..." class="form-control">
@@ -31,13 +31,30 @@
         
         
     <!-- OFFCANVAS  -->
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas offcanvas-bottom bg-secondary" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Il tuo biglietto:</h5>
+          <h5 class="offcanvas-title fw-semibold id="offcanvasBottomLabel">Il tuo biglietto:</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body small">
-            <div id="ticketPrice" class="mt-3"></div>
+        <div class="offcanvas-body small d-flex">
+            <div>
+                <div id="nome" class="mt-1 fw-semibold"></div>
+                <div id="cognome" class="fw-semibold"></div>
+            </div>
+            <div class="ms-5">
+                <div id="offerta" class="mt-1 fw-semibold"></div>
+            </div>
+            <div class="ms-5">
+                <div id="vagone" class="mt-1 fw-semibold"></div>
+                
+            </div>
+            <div class="ms-5">
+                <div id="codice-cp" class="mt-1 fw-semibold"></div>
+            </div>
+            <div class="ms-5">
+                <div id="ticketPrice" class="mt-1 fw-semibold"></div>
+            </div>
+            
         </div>
       </div>
        
