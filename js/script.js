@@ -4,7 +4,7 @@ function calcolaPrezzo() {
 
     const prezzoBase = km * 0.21;
     let prezzoFinale = prezzoBase;
-
+    let minorenne = (document.getElementById("mino"))
     if (age < 18) {
         // Applica lo sconto del 20% per i minorenni
         prezzoFinale *= 0.8;

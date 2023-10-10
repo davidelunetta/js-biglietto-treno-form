@@ -10,18 +10,21 @@
 <body>
    <div class="container 100vh border">
         <div class="input-group">
-            <input id="kmInput" type="text" aria-label="First name" placeholder="Nome" class="form-control">
-            <input id="ageInput" type="text" aria-label="Last name" placeholder="Cognome" class="form-control">
+            <input  type="text" aria-label="First name" placeholder="Nome" class="form-control">
+            <input  type="text" aria-label="Last name" placeholder="Cognome" class="form-control">
         </div>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Seleziona l'età</option>
-            <option value="1">Maggiorenne</option>
-            <option value="2">Minorenne</option>
-            <option value="3">Over 65</option>
+        <div class="input-group">
+            <input id="kmInput"  type="number"  placeholder="Inserisci i km che vuoi percorrere..." class="form-control">
+        </div>
+        <select id="ageInput" type="number" aria-placeholder="Seleziona l'età" class="form-select" >
+            
+            <option id="mino" value="1">Maggiorenne</option>
+            <option id="maggio" value="2">Minorenne</option>
+            <option id="over" value="3">Over 65</option>
         </select>
-        <button type="button" class="btn btn-primary">Invia</button>
-        <button type="button" class="btn btn-danger">Reset</button>
-
+        <button type="button"  class="btn btn-primary" onclick="calcolaPrezzo()">Invia</button>
+        <button type="button" aria-label="Reset" class="btn btn-danger">Reset</button>
+        <div id="ticketPrice"></div>
    </div>
    
 
